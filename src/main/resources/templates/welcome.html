@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>NovairGroup Software Data Services</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/simplex/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://bootswatch.com/_assets/css/custom.min.css" />
+		<!--
+		<link rel="stylesheet" th:href="@{/css/main.css}" href="https://bootswatch.com/_assets/css/custom.min.css" />
+		-->
+	</head>
+
+	<body>
+
+
+	<!-- Navbar -->
+	<!-- ****************************** -->
+
+	<div class="container">
+
+		<div class="page-header">
+			<img src="../images/logo.png" alt="NovairGroup"> </img>
+		</div>
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">NovairGroup</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarColor01">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="../html/about.html">About</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+
+		</div>
+
+	<!-- ****************************** -->
+
+
+
+	<!-- ****************************** -->
+		<div class="container">
+
+			<div class="jumbotron">
+				<h1 class="display-3">Welcome to NovairGroup.</h1>
+
+
+
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+				</p>
+			</div>
+
+			<div>
+				<p>
+
+
+				<h2>
+					<span th:text="' ' + ${message}"></span>
+				</h2>
+				</p>
+			</div>
+
+		</div>
+		<!-- /.container -->
+
+
+	<!-- TABS -->
+
+	<div class="container">
+
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#about">About</a>
+			</li>
+			<!--
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Separated link</a>
+				</div>
+			</li>
+			-->
+		</ul>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade show active" id="about">
+				<p>
+					Founded in 1998, in North West Baltimore County, Maryland, NovairGroup, Llc. is a minority
+					woman-owned small business focused on providing software systems development services to the Federal Government.
+				</p>
+				<p>Our team has delivered data systems and business intelligence and analytics programs for well-recognized brands
+					and global enterprises. Our track record and mission are clear: we commit to working closely with our clients to
+					enable their success. We become trusted advisors.
+				</p>
+				<p>
+					As a premier data services provider, NovairGroup manages the complexities of data and data driven systems through our
+					Secure Managed Cloud Services. You can trust your analytics will be delivered with excellence by our data science and software engineer experts
+					every time helping business and marketing leaders make smart and informed business decisions quickly.
+				</p>
+			</div>
+			<div class="tab-pane fade" id="profile">
+				<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+					blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress,
+					commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic
+					magna delectus mollit.</p>
+			</div>
+			<div class="tab-pane fade" id="dropdown1">
+				<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi
+					farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy
+					salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+			</div>
+			<div class="tab-pane fade" id="dropdown2">
+				<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+					cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
+					locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
+					they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+			</div>
+		</div>
+	</div>
+	<!-- ENTD TABS -->
+
+	<!-- CARDS -->
+
+	<div class="container">
+
+		<table style="width:100%">
+
+		<tr>
+
+		<td>
+		<div class="card bg-secondary mb-3" style="max-width: 20rem;">
+			<div class="card-header">IMG</div>
+			<div class="card-body">
+				<h4 class="card-title">Fast Track</h4>
+				<p class="card-text">Our FastTrack programs offer a rapid, intelligent approach to optimizing your
+					analytics program. Fast Track is a low-risk, cost-effective, game-changing program designed to
+					deliver success you can measure in weeks!</p>
+			</div>
+		</div>
+			</td>
+			<td>
+		<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+			<div class="card-header">IMG</div>
+			<div class="card-body">
+				<h4 class="card-title">Data Management</h4>
+				<p class="card-text">Up front business intelligence and technical expertise paired with cutting edge
+					tools and innovative hosting capabilities allows our team to tailor programs specific to our
+					client’s needs.</p>
+
+				<p>Strategic Advising</p>
+				<p>Data Architecture</p>
+				<p>Data Migration and Conversion</p>
+				<p>Data Integration</p>
+				<p>Data Modeling</p>
+				<p>Database Development</p>
+				<p>Data Quality Management</p>
+				<p>Managed Hosting</p>
+			</div>
+		</div>
+			</td>
+			<td>
+		<div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+			<div class="card-header">IMG</div>
+			<div class="card-body">
+				<h4 class="card-title">Data Analytics</h4>
+				<p class="card-text">Profitability and overall success are often based on an enterprise’s ability to
+					align data, tools, and people within a robust yet business-friendly analytics program. We design,
+					implement, and deliver according to your organization’s requirements.</p>
+
+				<p>Omni-channel Customer Analytics</p>
+				<p>Web/Mobile/Social Analytics</p>
+				<p>Real Estate/Location/Market Analysis</p>
+				<p>Advanced Pricing Models</p>
+				<p>Promotion Analytics</p>
+				<p>Strategic A/B Testing</p>
+				<p>Support and Subscription Services</p>
+			</div>
+		</div>
+			</td>
+		</tr>
+			<tr>
+			<td>
+		<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+			<div class="card-header">Header</div>
+			<div class="card-body">
+				<h4 class="card-title">Warning card title</h4>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's content.</p>
+			</div>
+		</div>
+			</td>
+			<td>
+		<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+			<div class="card-header">Header</div>
+			<div class="card-body">
+				<h4 class="card-title">Info card title</h4>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's content.</p>
+			</div>
+		</div>
+			</td>
+			<td>
+		<div class="card bg-light mb-3" style="max-width: 20rem;">
+			<div class="card-header">Header</div>
+			<div class="card-body">
+				<h4 class="card-title">Light card title</h4>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's content.</p>
+			</div>
+		</div>
+			</td>
+
+		</tr>
+
+		</table>
+	</div>
+	<!-- END CARDS -->
+
+
+
+	<!-- JAVASCRIPT -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/custom.js"></script>
+
+
+	</body>
+</html>
